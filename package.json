@@ -1,0 +1,11 @@
+{
+  "name": "pinchwise-landing",
+  "version": "1.0.0",
+  "description": "Editorial Coming Soon page for PinchWise",
+  "scripts": {
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

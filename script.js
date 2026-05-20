@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('waitlist-form');
     const counterDisplay = document.getElementById('signup-count');
-    const dbId = document.body.dataset.dbId;
+    const dbId = '027c9d96-e17f-449e-b14a-54388e330a3f'; // Updated with real DB ID
 
     // Fetch current count
     async function updateCount() {

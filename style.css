@@ -77,6 +77,7 @@ header {
     width: 100%;
     height: auto;
     object-fit: cover;
+    box-shadow: 20px 20px 0px var(--divider-color);
 }
 
 /* Sections */
@@ -97,43 +98,43 @@ section {
 .problem-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
+    gap: 60px;
 }
 
 .problem-item h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
 /* Collection */
 .collection-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 40px;
 }
 
 .collection-item {
-    border: 1px solid var(--divider-color);
-    padding: 20px;
+    padding-bottom: 40px;
 }
 
 .collection-item img {
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .collection-item h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 /* Waitlist Form */
 .waitlist-section {
     text-align: center;
     background-color: #f3f3f0;
-    border-top: none;
+    border-top: 1px solid var(--divider-color);
+    padding: 120px 0;
 }
 
 .waitlist-content {
@@ -142,14 +143,15 @@ section {
 }
 
 .waitlist-content h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 30px;
 }
 
 .form-group {
     display: flex;
     gap: 10px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 input[type="email"] {
@@ -159,7 +161,7 @@ input[type="email"] {
     border-bottom: 2px solid var(--text-color);
     padding: 15px 5px;
     font-family: var(--font-body);
-    font-size: 18px;
+    font-size: 20px;
     outline: none;
 }
 
@@ -167,34 +169,37 @@ button {
     background-color: var(--text-color);
     color: white;
     border: none;
-    padding: 15px 40px;
+    padding: 18px 45px;
     font-family: var(--font-body);
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 button:hover {
     background-color: var(--accent-gold);
+    transform: translateY(-2px);
 }
 
 .counter {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 14px;
-    font-style: italic;
-    color: #666;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #888;
 }
 
 /* Footer */
 footer {
-    padding: 60px 0;
+    padding: 80px 0;
     border-top: 1px solid var(--divider-color);
     text-align: center;
-    font-size: 14px;
-    letter-spacing: 1px;
+    font-size: 12px;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    color: #999;
 }
 
 /* Responsive */
@@ -205,7 +210,7 @@ footer {
         padding: 60px 0;
     }
     .hero-content h1 {
-        font-size: 60px;
+        font-size: 56px;
     }
     .hero-content p {
         margin: 0 auto 40px;
@@ -215,5 +220,8 @@ footer {
     }
     .form-group {
         flex-direction: column;
+    }
+    .container {
+        padding: 0 20px;
     }
 }
